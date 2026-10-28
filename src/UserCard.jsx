@@ -6,7 +6,6 @@ const [clicked, setClicked] = useState(false);
 
 console.log(Object.entries(rest));
 
-  // Fungsi handler
   function handleClick() {
     setClicked(true);
   }
@@ -20,7 +19,6 @@ console.log(Object.entries(rest));
       <p className="text-gray-600">
         <span className="font-medium">Address:</span> {street}, {city}
       </p>
-            {/* Menampilkan data tambahan dari rest */}
       {Object.entries(rest).map(([key, value]) => (
         <p key={key} className="text-gray-600">
           <span className="font-medium capitalize">{key}:</span> {value}
